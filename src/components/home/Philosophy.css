@@ -1,0 +1,47 @@
+.home__philosophy {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 6rem 2rem;
+}
+
+.philosophy__container__title {
+    margin-bottom: 5rem;
+}
+
+.philosophy__container__topic {
+    background-color: #dfdfdf;
+    align-items: center;
+}
+
+.topic__provisor-img img{
+    width: 350px;
+    border-radius: 25px ;
+    margin-left: 1rem;
+}
+
+.quote-list {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    text-align: justify;
+    padding: 0 1.2rem;
+}
+
+.quote {
+    flex-direction: column;
+    color: darkblue;
+    font-size: 1.1rem;
+
+    .first-ltter {
+        display: inline;
+    }
+
+    && a {
+        color: black;
+        font-weight: bold;
+    }
+
+    && a:hover {
+        color: blue;
+    }
+}

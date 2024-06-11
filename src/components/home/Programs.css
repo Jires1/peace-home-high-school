@@ -1,0 +1,91 @@
+.home__programs {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 6rem;
+}
+
+
+p.p-title {
+    margin: 3rem auto;
+    color: darkblue;
+    background-color: whitesmoke;
+    border: 2px dashed darkblue;
+    text-transform: capitalize;
+    cursor: default;
+    transition: .3s ease 100ms;
+    margin-bottom: 0;
+}
+
+p.p-title:hover {
+    background-color: darkblue;
+    color: white;
+    border: 2px dashed whitesmoke;
+}
+
+h2.head-title {
+    margin: 1rem 0;
+    color: darkblue;
+    text-align: center;
+}
+
+
+.program__container__programs {
+    margin: 0 auto;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.program__container__title {
+    margin-bottom: 6rem;
+}
+
+.program{
+    position: relative;
+}
+
+.program img {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.caption {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000f984d;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 60%;
+    transition: .4s;
+    overflow: hidden;
+
+    && img {
+        width: 100px;
+        height: 100px;
+        padding-bottom: 2rem;
+        object-fit: contain;
+    }
+
+    && .caption-p {
+        background: rgba(255, 255, 255, 0.596);
+        color: darkblue;
+        padding: .1rem .5rem;
+        font-size: 2rem;
+    }
+}
+
+.caption:hover {
+    padding-top: 0;
+    opacity: 1;
+}
