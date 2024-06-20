@@ -18,7 +18,7 @@ export default function Navbar() {
                 </ul>
 
                 <div className='row'>
-                    <button>Apply Now</button>
+                    <button> <a href="/Contact">Apply Now</a></button>
                 </div>
             </nav>
         </header>

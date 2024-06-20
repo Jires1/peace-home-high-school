@@ -3,7 +3,7 @@ import './Philosophy.css'
 
 export default function Philosophy () {
     return(
-        <div className="home__philosophy">
+        <div className="home__philosophy white-grey">
             <div className="philosophy__container">
                 <div className="philosophy__container__title">
                     <p className='p-title'>Our Philosophy</p>
@@ -18,11 +18,15 @@ export default function Philosophy () {
                 <div className="topic__quotes">
                     <h2 className="head-title">The Fondator</h2>
                     <ul className="row quote-list">
-                        <li className="row quote"><span className="first-ltter">L</span>orem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus aliquam consequatur voluptatum? A odit labore esse voluptatum nostrum officia incidunt eum, voluptatem cupiditate obcaecati placeat illum. Enim minima necessitatibus fugiat reiciendis, ab velit! Tempore in voluptates, hic delectus sequi nisi maiores quas itaque sed libero nemo? Dignissimos esse delectus recus...
+                        <li className="row quote"><p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus aliquam consequatur voluptatum? A odit labore esse voluptatum nostrum officia incidunt eum, voluptatem cupiditate obcaecati placeat illum. Enim minima necessitatibus fugiat reiciendis, ab velit! Tempore in voluptates, hic delectus sequi nisi maiores quas itaque sed libero nemo? Dignissimos esse delectus recus...
+                        </p>
                             <a href="">Read more <span className="arrow-right"></span></a>
                         </li>
 
-                        <li className="row quote"><span className="first-ltter">L</span>orem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus aliquam consequatur voluptatum? A odit labore esse voluptatum nostrum officia incidunt eum, voluptatem cupiditate obcaecati placeat illum. Enim minima necessitatibus fugiat reiciendis, ab velit! Tempore in voluptates, hic delectus sequi nisi maiores quas itaque sed libero nemo? Dignissimos esse delectus recusan...
+                        <li className="row quote"><p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus aliquam consequatur voluptatum? A odit labore esse voluptatum nostrum officia incidunt eum, voluptatem cupiditate obcaecati placeat illum. Enim minima necessitatibus fugiat reiciendis, ab velit! Tempore in voluptates, hic delectus sequi nisi maiores quas itaque sed libero nemo? Dignissimos esse delectus recus...
+                        </p>
                             <a href="">Read more <span className="arrow-right"></span></a>
                         </li>
                     </ul>

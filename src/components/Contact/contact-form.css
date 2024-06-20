@@ -1,0 +1,122 @@
+.Contact {
+    margin-top: 7rem;
+
+    && .p-title {
+        font-size: 3rem;
+        font-family: "Roboto Slab", serif;
+        font-style: italic;
+        text-align: center;
+        padding: .5rem 1rem;
+        width: fit-content;
+    }
+
+    && .container {
+        gap: 2rem;
+        padding: 7rem;
+    }
+}
+
+/* contact-info.css */
+
+.left {
+    width: 100%;
+}
+
+.contact-info {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    color: #3D3D3D;
+  }
+  
+  .contact-info h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-head{
+    color: darkblue;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }  
+
+  /* Contact Forms */
+
+.contact-form {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    color: #3D3D3D;
+
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .contact-form .form-group textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .contact-form button[type="submit"] {
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    background-color: darkblue;
+  }
+  

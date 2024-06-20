@@ -1,12 +1,14 @@
 .home__hero {
+    position: relative;
     height: 100vh;
     width: 100%;
     /* background: linear-gradient(rgba(203, 205, 214, 0.274), rgba(0, 5, 77, 0.699)), url(/src/assets/img/img-0.jpg); */
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: center top;
+    background-position: top top;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
     && >div {
         display: flex;
@@ -14,22 +16,54 @@
         justify-content: center;
         align-items: center;
     }
+
+    && .text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        inset: 0;
+        z-index: 10;
+    }
+
+    && .img-slider {
+        object-fit: fill;
+    }
+}
+
+.white-grey {
+    background: #FAFAFA;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 5, 77, 0.589));
+    z-index: 2;
 }
 
 .home p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "Roboto Slab", serif;
     font-style: italic;
     text-align: center;
     color: #dddddd;
-    /* text-shadow: rgb(0, 0, 0) 0px 2px 2px; */
     background-color: rgba(0, 0, 255, 0.616);
     padding: .5rem 1rem;
     width: fit-content;
 }
 
+.text p {
+    text-shadow: rgb(0, 0, 0) 0px 2px 2px;
+    font-size: 2.5rem;
+}
+
 .home__hero h3{
-    font-family: "Roboto Slab", serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 6rem; 
     text-align: center;

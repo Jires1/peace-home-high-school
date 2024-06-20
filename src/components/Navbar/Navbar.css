@@ -5,6 +5,10 @@
     position: fixed;
     inset: 0;
     z-index: 4;
+
+    && button a {
+        color: rgb(22, 22, 153);
+    }
 }
 
 .header__nav {
@@ -70,7 +74,9 @@
 
     && .head-link {
         font-size: 1.2rem;
-        line-height: 2;
+        line-height: 1;
+        letter-spacing: -1px;
+        margin-right: .5rem;
         color: #dbdbdb;
     }
 
@@ -81,6 +87,11 @@
 
     && .head-link__sub {
         color: darkgray;
+        font-style: oblique;
+    }
+
+    && .head-link__sub:hover {
+        color: #00d9ff;
     }
 
     && .pin2{
@@ -91,6 +102,17 @@
         height: 40px;
         background: none;
     }
+}
+
+
+#sub-2 {
+    display: flex;
+}
+
+.sub-sub-1, .sub-sub-0, .sub-sub-2 {
+    border-left: 3px solid #ffffff00;
+    padding-right: .5rem;
+    padding-top: .5rem;
 }
 
 .link:hover{

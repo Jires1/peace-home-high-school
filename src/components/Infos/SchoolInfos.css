@@ -1,0 +1,66 @@
+
+.img-general {
+    margin-top: 8rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    && h2 {
+        color: #3d3d3d;
+        font-size: 2.5rem;
+    }
+
+    && img {
+        max-width: 800px;
+    }
+}
+
+.school-info {
+    max-width: 800px;
+    margin: 10rem auto;
+
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #3d3d3d;
+}
+  
+.school-info h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+  
+.school-info p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+  
+.school-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.school-info li {
+    margin-bottom: 10px;
+}
+  
+.school-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+  
+.school-info th,
+.school-info td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+  
+.school-info th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  

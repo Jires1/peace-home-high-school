@@ -1,0 +1,64 @@
+.home__gallery {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 6rem 2rem;
+}
+
+.gallery__container__title {
+    margin-bottom: 1rem;
+}
+
+.gallery__photos__img {
+    width: 260px !important;
+    height: 300px !important;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.gallery__photos  .swiper-wrapper {
+    height: 500px !important; 
+}
+
+.gallery__photos  .swiper-slide {
+    width: auto !important;
+    width: auto !important;
+    display: flex;
+    background: none;
+}
+
+.gallery__photos .swiper-slide-active img{
+    transform: scale(1.25);
+    transition: .3s 100ms ease-in-out ;
+    box-shadow: 3px -1px 35px 1px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 3px -1px 35px 1px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 3px -1px 35px 1px rgba(0, 0, 0, 0.44);
+}
+
+.btn {
+    align-items: flex-end;
+    background: #212ea0;
+    margin: 0 auto;
+    border: 1px darkblue solid;
+    color: #fff;
+}
+
+.btn svg {
+    margin-left: .5rem;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: darkblue;
+    transition: ease-in-out .3s 100ms;
+}
+
+.btn:hover a {
+    color: darkblue;
+    transition: ease-in-out .3s 100ms;
+}
+
+.btn:hover svg {
+    margin-left: 1rem;
+    transition: .4s ease-in 100ms ;
+}

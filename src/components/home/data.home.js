@@ -2,7 +2,7 @@
 const imageSlider = [
     {
         id:0,
-        url: 'img-0.jpg',
+        url: 'img-0.webp',
         title:'PEACE HOME COMPREHENSIVE HIGH SCHOOL',
         paragraph: 'Welcome to'
     },
@@ -18,6 +18,6 @@ const imageSlider = [
         title:'We Help Your Children to Build a Better Education',
         paragraph: 'Why Study at P.H.C.H.S'
         }
-]
+] 
 
 export default imageSlider ;

@@ -1,48 +1,52 @@
-import {useEffect, useState} from 'react'
 import imageSlider from './data.home.js'
 
-export default function BackgroundSlider () {
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectFade, EffectCoverflow, EffectCards } from 'swiper/modules';
 
-    const [slideindex, setSlideIndex] = useState(0);
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/effect-cards';
 
-    useEffect(()=> {
-        const timer = setTimeout(() => {
-            if(slideindex === 2){
-                setSlideIndex(0)
-            }else{
-                setSlideIndex(slideindex+1)
-            }
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-        }, 8000);
-        return ()=> clearInterval(timer)
-    },[slideindex])
-
-    const goToNext = (slideindex) => {
-        setSlideIndex(slideindex)
-    }
-    
-    const backgroundStyle = {
-        background: `linear-gradient(rgba(203, 205, 214, 0.274), rgba(0, 5, 77, 0.699)), url(/src/assets/img/${imageSlider[slideindex].url})`,
-    }
-
-    const changeP = () => {
-        console.log("P changed");
-    }
-
-    return (
-        <div style={backgroundStyle} className="row home__hero">
-                <div>
-                    <p>{imageSlider[slideindex].paragraph}</p>
-                    <h3>{imageSlider[slideindex].title}</h3>
-
-                    <div className='caroussel-boul'>
-                        {imageSlider.map((e, index)=>(
-                            (index === slideindex ? (<span className='active' key={index} onClick={()=>goToNext(index)} ></span>):(<span key={index} onClick={()=>goToNext(index)} ></span>))
-                        ))}
+export default function BackgroundSlider() {
+  return (
+    <div className="row home__hero">
+      
+      <Swiper
+        centeredSlides={true}
+        autoplay={{
+          delay: 8000,
+          disableOnInteraction: false,
+            }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={false}
+        modules={[Autoplay, Pagination, Navigation, EffectCards]}
+        effect={'cards'}
+        className="mySwiper"
+        speed={2000}
+      >
+        {
+            imageSlider.map((slider, index)=> (
+                <SwiperSlide>
+                    <div className="text">
+                        <p>{slider.paragraph}</p>
+                        <h3>{slider.title}</h3>
                     </div>
-
-                </div> 
-            
-        </div>
-    )
+                    <div className="background-overlay"></div>
+                    
+                    <img className='img-slider' src={`/src/assets/img/${slider.url}`} />
+                </SwiperSlide>
+            ))
+        }
+        
+      </Swiper>
+    </div>
+  );
 }

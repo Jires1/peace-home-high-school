@@ -1,7 +1,20 @@
 .home__philosophy {
     padding-left: 10%;
     padding-right: 10%;
-    margin: 6rem 2rem;
+}
+
+
+.philosophy__container__topic {
+    justify-content: center;
+}
+
+.philosophy__container {
+    margin: 100px auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
 }
 
 .philosophy__container__title {
@@ -9,39 +22,64 @@
 }
 
 .philosophy__container__topic {
-    background-color: #dfdfdf;
+    background-color: #ffffff00;
     align-items: center;
 }
 
+.topic__quotes {
+    flex-basis: 56%;
+
+    && h2.head-title {
+        text-align: left;
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+}
+
 .topic__provisor-img img{
-    width: 350px;
-    border-radius: 25px ;
-    margin-left: 1rem;
+    flex-basis: 40%;
+    position: relative;
 }
 
 .quote-list {
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
-    text-align: justify;
+    gap: 1rem;
+    text-align: left;
     padding: 0 1.2rem;
 }
 
 .quote {
     flex-direction: column;
-    color: darkblue;
     font-size: 1.1rem;
 
-    .first-ltter {
+    && .first-ltter {
         display: inline;
     }
 
     && a {
         color: black;
         font-weight: bold;
+        font-size: 1rem;
+        margin-left: 1rem;
     }
 
     && a:hover {
         color: blue;
+    }
+
+    && p {
+        font-size: 1.3rem;
+        text-align: left;
+        background: none;
+        color: #4e4e4e;
+    }
+
+    && p::first-letter{
+        font-size: 4rem;
+        float: left;
+        line-height: 1;
+        margin: 0;
+        color: darkgrey;
     }
 }

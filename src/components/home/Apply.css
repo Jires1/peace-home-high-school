@@ -1,0 +1,32 @@
+.home__apply {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    && .apply {
+        height: 100px;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        && h2 {
+            font-size: 3rem;
+            color: #000f38 ;
+        }
+
+        && .btn-apply {
+            font-size: 1.2rem;
+            background: #212ea0;
+            margin: 0;
+        }
+
+        && .btn-apply:hover {
+            color: #212ea0;
+            background: whitesmoke;
+        }
+
+        && svg {
+            font-size: 1.2rem;
+        }
+    }
+}
