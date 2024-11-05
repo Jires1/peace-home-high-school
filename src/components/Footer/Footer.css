@@ -11,6 +11,7 @@
         width: 100%;
         justify-content: space-between;
         margin: 0 auto;
+        flex-wrap: wrap;
     }
 
     && .ets-infos{
@@ -58,4 +59,10 @@
         }
     }
 
+}
+
+@media (max-width:890px) {
+    .footer__top-container {
+        gap: 1.5rem;
+    }
 }

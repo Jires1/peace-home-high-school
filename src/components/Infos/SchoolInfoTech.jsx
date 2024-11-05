@@ -30,7 +30,7 @@ export default function SchoolInfoTech () {
       { class: 'Form One', installments: [110000, 30000, 30000], total: 170000 },
       { class: 'Form Two', installments: [110000, 30000, 30000], total: 170000 },
       { class: 'Form Three', installments: [110000, 30000, 30000], total: 170000 },
-      { class: 'Form Four', installments: [0, 110000, 10000], total: 150000 },
+      { class: 'Form Four', installments: [110000, 30000, 30000], total: 150000 },
     ],
     uniformGuidelines: [
       'Samples are available on campus',
@@ -107,7 +107,7 @@ export default function SchoolInfoTech () {
         <ul>
             <li>Money paid is not refundable</li>
             <li>All students will be given a copy of the school rules and regulations upon registration</li>
-            <li>The school's culture is "Unrelenting Passion for Excellence!"</li>
+            <li>The school's culture is <b>"Unrelenting Passion for Excellence!"</b></li>
         </ul>
         </div>
     </>

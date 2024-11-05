@@ -10,7 +10,8 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-coverflow'
 
-import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+import { Autoplay, Navigation } from 'swiper/modules'
+import { Link } from 'react-router-dom'
 
 
 export default function Gallery() {
@@ -58,10 +59,9 @@ export default function Gallery() {
                         ))
                     }
     
-
                 </Swiper>
             </div>
-            <button className="btn row"><a href="/Actualities">See more heres</a><GoArrowRight /></button>
+            <button className="btn row"><Link to="/Discover/Gallery">See more heres</Link><GoArrowRight /></button>
         </div>
     )
 }

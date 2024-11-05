@@ -18,7 +18,7 @@
 
 .testimonial__swiper__content{
     justify-content: center;
-    max-width: 800px;
+    width: 500px;
     gap: 4rem;
 }
 
@@ -69,3 +69,10 @@
     margin-top: 2rem;
 }
 
+
+@media (max-width:780px) {
+    .testimonial__swiper__content{
+        width: calc( 90% - 20% );
+        min-width: 250px;
+    }
+}

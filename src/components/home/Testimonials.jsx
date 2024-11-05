@@ -1,6 +1,5 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import {EffectCoverflow } from 'swiper/modules'
 import './testimonial.css' 
 import Testimonial from './Testimonial.jsx'
 
@@ -10,7 +9,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-coverflow'
 
-import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+import {  Navigation } from 'swiper/modules'
 
 
 export default function Testimonials() {
@@ -29,16 +28,21 @@ export default function Testimonials() {
                     <Swiper navigation={true} modules={[Navigation]} speed={1000} className="mySwiper">
                             <SwiperSlide>
                                 <div className="row testimonial__swiper__content">
-                                    <Testimonial/>
-                                    <Testimonial/>
+                                    <Testimonial author="Chibindji Kadjija" job="Salesperson" >I really appreciate the personalized attention my child receives. The small class sizes allow each student to be closely monitored and to progress at their own pace. It really makes a difference.</Testimonial>
                                 </div>
                             </SwiperSlide>
-                        <SwiperSlide>
+
+                            <SwiperSlide>
                                 <div className="row testimonial__swiper__content">
-                                    <Testimonial/>
-                                    <Testimonial/>
+                                    <Testimonial author="Martin" job="Nurse" >The school has been able to identify my child's talents and encourage them to develop. The wide range of extracurricular activities offered allows them to fully flourish.</Testimonial>
                                 </div>
-                        </SwiperSlide>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className="row testimonial__swiper__content">
+                                    <Testimonial author="Kamto John" job="Architect" >The science labs are very well equipped, which allows students to carry out concrete experiments. This facilitates the understanding of theoretical concepts.</Testimonial>
+                                </div>
+                            </SwiperSlide>
                     </Swiper>
             </div>
         </div>

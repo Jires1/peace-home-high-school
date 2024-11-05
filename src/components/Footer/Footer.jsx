@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 import { FaFacebook, FaTwitter, FaInstagram} from 'react-icons/fa'
 
@@ -14,23 +15,23 @@ export default function Footer() {
                 </div>
 
                 <div className="row links">
-                    <a href="/Discover">Discover Us</a>
-                    <a href="/Study at P.H.C.H.S">STUDY AT P.H.C.H.S</a>
-                    <a href="/Contact">Contact</a>
+                    <Link to="/Discover">Discover Us</Link>
+                    <Link to="/Study at P.H.C.H.S">STUDY AT P.H.C.H.S</Link>
+                    <Link to="/Contact">Contact</Link>
                 </div>
 
                 <div className="row links">
-                    <a href="#">Disclaimer</a>
-                    <a href="#">Testimonials</a>
-                    <a href="#">Privacy Policy</a>
+                    <Link href="#">Disclaimer</Link>
+                    <Link to="#">Testimonials</Link>
+                    <Link to="#">Privacy Policy</Link>
                 </div>
 
                 <div className="row join">
                     <p>Follow Us</p>
                     <div className='row social-media'>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><FaFacebook/></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                        <Link to="http:/faecebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook/></Link>
+                        <Link to="http:/twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></Link>
+                        <Link to="http:/instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></Link>
                     </div>
                 </div>
             </div>

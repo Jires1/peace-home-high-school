@@ -15,6 +15,14 @@ export default function Actualities () {
 
             <div className="photo-gallery">
 
+            <div className="gallery-grid">
+                    {[...Array(49).keys()].map((img, index) => (
+                    <div className="gallery-item" key={index}>
+                        <img src={`/src/assets/compress/img (${img}).webp`} />
+                    </div>
+                    ))}
+                </div>
+
                 <div className="gallery-grid">
                     {[...Array(26).keys()].map((img, index) => (
                     <div className="gallery-item" key={index}>
@@ -22,7 +30,9 @@ export default function Actualities () {
                     </div>
                     ))}
                 </div>
-                </div>
+
+                
+            </div>
         </section>
     )
 }

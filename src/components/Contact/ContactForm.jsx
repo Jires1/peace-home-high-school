@@ -7,7 +7,7 @@ export default function ContactForm () {
   const schoolData = {
     name: 'P.H.C.H.S',
     contactEmail: 'peacehome-school@gmail.com',
-    phoneNumber: '+1 123-456-7890',
+    phoneNumber: '+237 6xx xx xx xx',
     address: 'Carrefour Etoug-Ebe, behind La Mama P.O Box 115 Yde',
   };
 
@@ -64,5 +64,5 @@ export default function ContactForm () {
       </div>
     </section>
   );
-};
+}
 

@@ -18,6 +18,7 @@
             font-size: 1.2rem;
             background: #212ea0;
             margin: 0;
+            align-items: center;
         }
 
         && .btn-apply:hover {
@@ -28,5 +29,15 @@
         && svg {
             font-size: 1.2rem;
         }
+    }
+}
+
+@media (max-width:780px) {
+    .home__apply {
+        margin-bottom: 5rem;
+    }
+
+    .apply{
+        flex-direction: column;
     }
 }

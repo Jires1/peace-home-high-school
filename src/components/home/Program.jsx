@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 export default function Program ({caption, text, img}) {
     // console.log(caption); `/src/assets/captions/2.png`
     return (

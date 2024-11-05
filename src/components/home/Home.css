@@ -25,10 +25,12 @@
         align-items: center;
         inset: 0;
         z-index: 10;
+        width: 100%;
+        margin-top: 2rem;
     }
 
     && .img-slider {
-        object-fit: fill;
+        object-fit: cover;
     }
 }
 
@@ -103,4 +105,26 @@
 .caroussel-boul span.active {
     transition: background-color .4s 200ms ease;
     background-color: darkblue;
+}
+
+
+@media (max-width:1024px) {
+    .home__hero h3 {
+        width: 90%;
+        font-size: 4.2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .home__hero h3 {
+        width: 90%;
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width:558px) {
+    .home__hero h3 {
+        width: 90%;
+        font-size: 2rem;
+    }
 }

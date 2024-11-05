@@ -36,9 +36,14 @@
     }
 }
 
+.topic__provisor-img {
+    flex:0 0 50%;
+}
+
 .topic__provisor-img img{
-    flex-basis: 40%;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .quote-list {
@@ -70,16 +75,23 @@
 
     && p {
         font-size: 1.3rem;
-        text-align: left;
+        text-align: justify;
         background: none;
         color: #4e4e4e;
     }
 
     && p::first-letter{
-        font-size: 4rem;
+        font-size: 3rem;
         float: left;
         line-height: 1;
-        margin: 0;
+        margin: 0; 
         color: darkgrey;
+        margin-right: .5rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .philosophy__container__topic {
+        flex-direction: column;
     }
 }

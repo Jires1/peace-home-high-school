@@ -35,38 +35,50 @@
 /* photo-gallery.css */
 
 .photo-gallery {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.photo-gallery h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex-basis: 25%; 
+  margin: 10px;
+}
+
+.gallery-item img {
+  width: 300px;
+  height: auto;
+  object-fit: cover; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  opacity: 0.8; 
+}
   
-  .photo-gallery h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+@media (max-width:1024px) {
+  .head-title {
+    font-size: 3.5rem !important;
   }
-  
-  .gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+}
+
+@media (max-width:580px) {
+  .head-title {
+    font-size: 2.3rem !important;
   }
-  
-  .gallery-item {
-    flex-basis: 25%; 
-    margin: 10px;
-  }
-  
-  .gallery-item img {
-    width: 300px;
-    height: auto;
-    object-fit: cover; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .gallery-item img:hover {
-    opacity: 0.8; 
-  }
-  
+}
+

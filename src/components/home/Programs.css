@@ -4,8 +4,6 @@
     margin-bottom: 6rem;
 }
 
-
-
 p.p-title {
     margin: 3rem auto;
     color: darkblue;
@@ -33,7 +31,6 @@ h2.head-title {
 
 .program__container__programs {
     margin: 20px auto;
-    width: 90%;
     align-items: center;
     justify-content: space-between;
 }
@@ -43,8 +40,9 @@ h2.head-title {
 }
 
 .program{
-    flex-basis: 31%;
+    flex-basis: 32%;
     position: relative;
+    width: 100%;
 }
 
 .program img {
@@ -91,4 +89,17 @@ h2.head-title {
 .caption:hover {
     padding-top: 0;
     opacity: 1;
+}
+
+@media (max-width:1024px) {
+    .program__container__programs {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .caption {
+        opacity: 1;
+        padding-top: 0;
+    }
 }

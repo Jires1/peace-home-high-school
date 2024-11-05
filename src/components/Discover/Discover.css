@@ -67,3 +67,18 @@
         }
     }
 }
+
+@media (max-width:1024px) {
+    .history .history__container .about-name {
+        flex-direction: column-reverse !important;
+        align-items: center;
+
+        && article {
+            width: 100% !important;
+        }         
+
+        && .logo {
+            width: 100% !important;
+        }
+    }
+}

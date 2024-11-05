@@ -1,5 +1,6 @@
-import provisor from '/src/assets/philosophiy/provisor.jpg'
+import provisor from '/src/assets/philosophiy/provisor.webp'
 import './Philosophy.css'
+import { Link } from 'react-router-dom'
 
 export default function Philosophy () {
     return(
@@ -19,16 +20,36 @@ export default function Philosophy () {
                     <h2 className="head-title">The Fondator</h2>
                     <ul className="row quote-list">
                         <li className="row quote"><p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus aliquam consequatur voluptatum? A odit labore esse voluptatum nostrum officia incidunt eum, voluptatem cupiditate obcaecati placeat illum. Enim minima necessitatibus fugiat reiciendis, ab velit! Tempore in voluptates, hic delectus sequi nisi maiores quas itaque sed libero nemo? Dignissimos esse delectus recus...
+                        Dear Learners,
+
+                        Peace Home Comprehensive High School
+                        Etoug-Ebe Yaounde (PHCHS) is pleased to welcome you to
+                        its unique institution of learning.
+                        The institution offers English Medium General, Technical
+                        Commercial and Technical Industrial Education specialties.
+                        The subjects are taught based on the typical Anglo-Saxon
+                        fashion by professional teachers of high moral and socio-
+                        cultural backgrounds.
+
+                        Built on the principle of student-centered learning, PHCHS
+                        teachers are experts in detecting and harnessing talents of
+                        students for better integration and success in society.
+
+                         {/* Our motto: Partnering with God, changing lives demonstrates
+                        a strong attachment not only to discipline and hard work but
+                        also to academic excellence by faith.
+
+                        Hence our main goal is to detect and harness talents among
+                        our students who will serve as vectors of a changed society.
+                        That is the reason why you are here at PHCHS.
+                        Welcome once more and we wish you a successful academic
+                        career at PHCHS.
+
+                        THE PRINCIPAL */}
                         </p>
-                            <a href="">Read more <span className="arrow-right"></span></a>
+                            <Link to="/Discover/Our History">Read more... <span className="arrow-right"></span></Link>
                         </li>
 
-                        <li className="row quote"><p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus aliquam consequatur voluptatum? A odit labore esse voluptatum nostrum officia incidunt eum, voluptatem cupiditate obcaecati placeat illum. Enim minima necessitatibus fugiat reiciendis, ab velit! Tempore in voluptates, hic delectus sequi nisi maiores quas itaque sed libero nemo? Dignissimos esse delectus recus...
-                        </p>
-                            <a href="">Read more <span className="arrow-right"></span></a>
-                        </li>
                     </ul>
                 </div>
             </div>

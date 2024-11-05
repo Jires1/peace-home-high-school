@@ -12,7 +12,7 @@
 
     && .container {
         gap: 2rem;
-        padding: 7rem;
+        padding: 7rem 10%;
     }
 }
 
@@ -64,7 +64,6 @@
 
 .contact-form {
     width: 100%;
-    padding: 20px;
     border-radius: 5px;
     color: #3D3D3D;
 
@@ -119,4 +118,11 @@
   .contact-form button[type="submit"]:hover {
     background-color: darkblue;
   }
+
+  @media (max-width:1024px) {
+    .Contact .container {
+      flex-direction: column;
+    }
+  }
+  
   
